@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding/border na largura */
+}
+
+html, body {
+    height: 100%; /* Ocupa toda a altura da viewport */
+}
+
+main {
+    background-image: url(../IMG/montanha.jpg); /* Imagem de fundo */
+    background-size: cover; /* Cobrir todo o espaço */
+    background-repeat: no-repeat; /* Não repetir imagem */
+}
+
+.content {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Coluna de itens */
+    max-width: 950px; /* Largura máxima */
+    width: 100%; /* Largura total */
+    margin: 0 auto; /* Centraliza na página */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding/border */
+}
+
+.text-titles h1, h2 {
+    color: red; /* Cor dos títulos */
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+section {
+    margin-top: 35px;
+}
+
+.midia {
+    position: relative; /* Para centralizar ícone */
+    display: inline-block; /* Layout inline */
+}
+
+.midia img {
+    width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém proporção */
+}
+
+.midia a {
+    position: absolute; /* Centraliza ícone */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Corrige centralização */
+    font-size: 80px; /* Tamanho do ícone */
+    color: white; /* Cor do ícone */
+}
+
+.midia a:hover {
+    color: red; /* Cor ao passar o mouse */
+}
+
+.sound p {
+    color: white; /* Texto branco */
+}
+
+.btn-1 {
+    margin-top: 50px; /* Margem superior */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #007bff; /* Fundo azul */
+    color: white; /* Texto branco */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Cursor de clique */
+    text-align: center; /* Centraliza texto */
+    font-size: 1.5em; /* Tamanho do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.btn-1:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.text-content {
+    margin-top: 50px; /* Margem superior */
+}
+
+.text-content p {
+    color: white; /* Texto branco */
+}
+
+.btn-2 {
+    margin-top: 50px; /* Margem superior */
+    margin-bottom: 50px; /* Margem inferior */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #007bff; /* Fundo azul */
+    color: white; /* Texto branco */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Cursor de clique */
+    text-align: center; /* Centraliza texto */
+    font-size: 1.5em; /* Tamanho do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.btn-2:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+footer {
+    background-color: #c0c0c0; /* Cor de fundo do rodapé */
+}
+
+.footer-content {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Coluna de itens */
+    align-items: center; /* Centraliza os itens */
+}
+
+.text-footer {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Coluna de itens */
+    align-items: center; /* Centraliza os itens */
+    margin-top: 50px; /* Margem superior */
+    margin-bottom: 50px; /* Margem inferior */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .content {
+        padding: 10px; /* Reduz padding */
+    }
+
+    .text-titles h1, h2 {
+        font-size: 1.5em; /* Reduz tamanho do título */
+        text-align: center; /* Centraliza título */
+    }
+
+    .midia img {
+        width: 100%; /* Imagem responsiva */
+    }
+
+    .btn-1 {
+        width: 100%; /* Botão ocupa toda a largura */
+        font-size: 1.2em; /* Reduz tamanho do texto */
+    }
+
+    .text-content {
+        font-size: 0.9em; /* Reduz tamanho do texto */
+    }
+
+    .btn-2 {
+        width: 100%; /* Botão ocupa toda a largura */
+        font-size: 1.2em; /* Reduz tamanho do texto */
+    }
+
+    footer {
+        font-size: 0.8em; /* Texto menor no rodapé */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-titles h1, h2 {
+        font-size: 1.2em; /* Títulos menores */
+    }
+
+    .btn-1 {
+        font-size: 1em; /* Reduz tamanho do botão */
+    }
+
+    .text-content p {
+        font-size: 0.8em; /* Texto menor */
+    }
+
+    .btn-2 {
+        font-size: 1em; /* Botão menor */
+    }
+
+    .text-footer p {
+        margin: 5px;
+    }
+}
+
