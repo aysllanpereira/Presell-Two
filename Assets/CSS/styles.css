@@ -48,13 +48,19 @@ section {
 }
 
 .midia {
-    position: relative; /* Para centralizar ícone */
-    display: inline-block; /* Layout inline */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.midia img {
+.midia video {
     width: 100%; /* Imagem responsiva */
-    height: auto; /* Mantém proporção */
+    height: 600px; /* Mantém proporção */
+    display: block;
 }
 
 .midia a {
@@ -63,7 +69,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%); /* Corrige centralização */
     font-size: 80px; /* Tamanho do ícone */
-    color: white; /* Cor do ícone */
+    color: rgba(255, 255, 255, 0.7);; /* Cor do ícone */
 }
 
 .midia a:hover {
@@ -72,6 +78,7 @@ section {
 
 .sound p {
     color: black; /* Texto branco */
+    margin-top: 10px;
 }
 
 .btn-1 {
@@ -174,8 +181,9 @@ footer {
         text-align: center; /* Centraliza título */
     }
 
-    .midia img {
+    .midia video {
         width: 100%; /* Imagem responsiva */
+        height: 400px;
     }
 
     .btn-1 {
@@ -225,6 +233,11 @@ footer {
 
     .text-titles h1, h2 {
         font-size: 1.2em; /* Títulos menores */
+    }
+
+    .midia video {
+        width: 100%; /* Imagem responsiva */
+        height: 400px;
     }
 
     .btn-1 {
