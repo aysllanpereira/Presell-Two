@@ -8,10 +8,12 @@ html, body {
     height: 100%; /* Ocupa toda a altura da viewport */
 }
 
-main {
-    background-image: url(../IMG/montanha.jpg); /* Imagem de fundo */
-    background-size: cover; /* Cobrir todo o espaço */
-    background-repeat: no-repeat; /* Não repetir imagem */
+body {
+    background-image: url(../IMG/montanha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .content {
@@ -24,6 +26,13 @@ main {
     margin: 0 auto; /* Centraliza na página */
     padding: 20px; /* Espaçamento interno */
     box-sizing: border-box; /* Inclui padding/border */
+    border: 0.5px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.349);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
 }
 
 .text-titles h1, h2 {
@@ -62,7 +71,7 @@ section {
 }
 
 .sound p {
-    color: white; /* Texto branco */
+    color: black; /* Texto branco */
 }
 
 .btn-1 {
@@ -86,7 +95,7 @@ section {
 }
 
 .text-content p {
-    color: white; /* Texto branco */
+    color: black; /* Texto branco */
 }
 
 .btn-2 {
@@ -125,8 +134,17 @@ footer {
 }
 
 /* Responsividade para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .content {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .content {
+        width: 90%;
         padding: 10px; /* Reduz padding */
     }
 
@@ -159,6 +177,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+    .content {
+        width: 90%;
+    }
+
     .text-titles h1, h2 {
         font-size: 1.2em; /* Títulos menores */
     }
