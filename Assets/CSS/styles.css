@@ -36,7 +36,11 @@ body {
 }
 
 .text-titles h1, h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: red; /* Cor dos títulos */
+    font-size: 1.6em;
 }
 
 h2 {
