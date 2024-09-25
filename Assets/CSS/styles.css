@@ -39,8 +39,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red; /* Cor dos títulos */
     font-size: 1.6em;
+}
+
+strong {
+    color: red;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
 }
 
 h2 {
