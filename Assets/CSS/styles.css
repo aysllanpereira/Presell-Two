@@ -35,7 +35,7 @@ body {
     z-index: 1;
 }
 
-.text-titles h1, h2 {
+.text-titles h1, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body {
     margin-right: 5px;
 }
 
-h2 {
+h3 {
     margin-top: 25px;
 }
 
@@ -185,9 +185,13 @@ footer {
         padding: 10px; /* Reduz padding */
     }
 
-    .text-titles h1, h2 {
-        font-size: 1.5em; /* Reduz tamanho do título */
+    .text-titles h1 {
+        font-size: 22px; /* Reduz tamanho do título */
         text-align: center; /* Centraliza título */
+    }
+
+    .text-titles p {
+        font-size: 18px;
     }
 
     .midia video {
@@ -237,11 +241,15 @@ footer {
 @media (max-width: 480px) {
 
     .content {
-        width: 90%;
+        width: 95%;
     }
 
-    .text-titles h1, h2 {
-        font-size: 1.2em; /* Títulos menores */
+    .text-titles h1 {
+        font-size: 15px; /* Títulos menores */
+    }
+
+    .text-titles p {
+        font-size: 12.3px;
     }
 
     .midia video {
